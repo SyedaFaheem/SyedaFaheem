@@ -26,8 +26,8 @@
 | **Financial-Risk-for-Loan-Approval** | Machine learning–driven loan approval system using cost-sensitive classification| Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook |
 | **Hospital-Length-of-Stay-Prediction** | Predict hospital patient length of stay (LOS) using neural networks | Python, Pandas, NumPy, Matplotlib, Seaborn, TensorFlow / Keras, Scikit-learn |
 | **Healthcare-RAG-System** | (RAG) system for healthcare | Python, PyTorch, Transformers(Hugging Face), Sentence Transformers, Scikit-learn |
-| ** BBC News Classification with BERT** | BERT model for news article classification on the BBC News dataset | Python, TensorFlow & Keras, Hugging Face Transformers, NumPy, Pandas |
-| **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
+| **BBC News Classification with BERT** | BERT model for news article classification on the BBC News dataset | Python, TensorFlow & Keras, Hugging Face Transformers, NumPy, Pandas |
+| **EcoSort-Waste-Management-Assistant** | AI-powered waste management assistant  | Python, TensorFlow / Keras, PyTorch / Hugging Face (Transformers, NumPy, Pandas |
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 
