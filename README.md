@@ -25,7 +25,7 @@
 |--------|-------------|------|
 | **Financial-Risk-for-Loan-Approval** | Machine learning–driven loan approval system using cost-sensitive classification| Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook |
 | **Hospital-Length-of-Stay-Prediction** | Predict hospital patient length of stay (LOS) using neural networks | Python, Pandas, NumPy, Matplotlib, Seaborn, TensorFlow / Keras, Scikit-learn |
-| **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
+| **Healthcare-RAG-System** | (RAG) system for healthcare | Python, NumPy, Pandas, PyTorch, Transformers (Hugging Face), Sentence Transformers, Scikit-learn |
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
