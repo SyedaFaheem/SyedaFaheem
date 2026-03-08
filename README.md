@@ -23,7 +23,7 @@
 ### 📂 Featured Projects  
 | Project | Description | Tech |
 |--------|-------------|------|
-| **Financial-Risk-for-Loan-Approval** | Machine learning–driven loan approval system using cost-sensitive classification and risk score regression to reduce financial loss, improve decision consistency, and support explainable, data-driven lending.| Python, Scikit-learn (Random Forest, preprocessing, evaluation), Pandas & NumPy (data manipulation), Matplotlib & Seaborn (visualizations), Jupyter Notebook (analysis & reporting) |
+| **Financial-Risk-for-Loan-Approval** | Machine learning–driven loan approval system using cost-sensitive classification| Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook |
 | **Bike Demand Forecasting** | Time-series forecasting, 90% accuracy | Python, Pandas, |
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 
