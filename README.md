@@ -28,10 +28,10 @@
 | **Healthcare-RAG-System** | (RAG) system for healthcare | Python, PyTorch, Transformers(Hugging Face), Sentence Transformers, Scikit-learn |
 | **BBC News Classification with BERT** | BERT model for news article classification on the BBC News dataset | Python, TensorFlow & Keras, Hugging Face Transformers, NumPy, Pandas |
 | **EcoSort-Waste-Management-Assistant** | AI-powered waste management assistant  | Python, TensorFlow / Keras, PyTorch / Hugging Face (Transformers, NumPy, Pandas |
+| **Churn-Feature-Engineering** | Predicting customer churn in telecom using feature engineering | Python, Pandas, NumPy, Matplotlib & Seaborn, Scikit-Learn (Pipeline, ColumnTransformer, RandomForestClassifier, SelectFromModel)|
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
-
-
+| **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 ---
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/syeda-f-6270888b/) 
