@@ -24,9 +24,15 @@
 | Project | Description | Tech |
 |--------|-------------|------|
 | **Financial-Risk-for-Loan-Approval** | Machine learning–driven loan approval system using cost-sensitive classification| Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook |
-| **Bike Demand Forecasting** | Time-series forecasting, 90% accuracy | Python, Pandas, |
+| **Hospital-Length-of-Stay-Prediction** | Predict hospital patient length of stay (LOS) using neural networks | Python, Pandas, NumPy, Matplotlib, Seaborn, TensorFlow / Keras, Scikit-learn |
+| **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
+| **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
+| **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
+| **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 
+
+| **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 ---
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/syeda-f-6270888b/) 
