@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faheem Unnisa Syeda — Data Scientist</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #ffffff;
+            --bg-secondary: #f5f5f3;
+            --text: #1a1a1a;
+            --text-muted: #6b6b68;
+            --text-hint: #9a9a96;
+            --border: rgba(0, 0, 0, 0.12);
+            --border-hover: rgba(0, 0, 0, 0.25);
+            --blue: #185FA5;
+            --blue-light: #E6F1FB;
+            --blue-mid: #B5D4F4;
+            --green: #3B6D11;
+            --green-light: #EAF3DE;
+            --green-mid: #C0DD97;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1c1c1a;
+                --bg-secondary: #252523;
+                --text: #f0f0ec;
+                --text-muted: #a8a8a3;
+                --text-hint: #6e6e6a;
+                --border: rgba(255, 255, 255, 0.1);
+                --border-hover: rgba(255, 255, 255, 0.22);
+                --blue: #85B7EB;
+                --blue-light: #042C53;
+                --blue-mid: #0C447C;
+                --green: #97C459;
+                --green-light: #173404;
+                --green-mid: #27500A;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        a {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* NAV */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2.5rem;
+            border-bottom: 0.5px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: var(--bg);
+            z-index: 100;
+        }
+
+        .nav-logo {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--text);
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 3rem 2.5rem;
+            border-bottom: 0.5px solid var(--border);
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: var(--text-hint);
+            margin-bottom: 1.5rem;
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            padding: 3.5rem 2.5rem;
+            border-bottom: 0.5px solid var(--border);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #c4a882, #a07850);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 500;
+            color: #fff;
+            flex-shrink: 0;
+            border: 2px solid var(--border-hover);
+        }
+
+        .hero-text h1 {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .hero-subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .hero-bio {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.75;
+            max-width: 500px;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: 14px;
+        }
+
+        .badge {
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 999px;
+            border: 0.5px solid var(--border-hover);
+            color: var(--text-muted);
+            background: var(--bg-secondary);
+        }
+
+        .badge.hl {
+            background: var(--blue-light);
+            color: var(--blue);
+            border-color: var(--blue-mid);
+        }
+
+        /* STATS */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            padding: 2rem 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            border-bottom: 0.5px solid var(--border);
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .stat-num {
+            font-size: 26px;
+            font-weight: 500;
+            color: var(--blue);
+        }
+
+        .stat-lbl {
+            font-size: 12px;
+            color: var(--text-hint);
+            margin-top: 3px;
+        }
+
+        /* SKILLS */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        .skill-card {
+            background: var(--bg-secondary);
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            border: 0.5px solid var(--border);
+        }
+
+        .skill-cat {
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-hint);
+            margin-bottom: 7px;
+        }
+
+        .skill-items {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* EXPERIENCE */
+        .exp-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .exp-item {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .exp-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--blue);
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+
+        .exp-role {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .exp-org {
+            font-size: 13px;
+            color: var(--blue);
+            margin-top: 1px;
+        }
+
+        .exp-date {
+            font-size: 12px;
+            color: var(--text-hint);
+            margin: 3px 0 8px;
+        }
+
+        .exp-bullets {
+            padding-left: 1.1rem;
+        }
+
+        .exp-bullets li {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.75;
+        }
+
+        /* PROJECTS */
+        .proj-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+        }
+
+        .proj-card {
+            background: var(--bg);
+            border: 0.5px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.1rem 1.2rem;
+            transition: border-color 0.2s;
+        }
+
+        .proj-card:hover {
+            border-color: var(--border-hover);
+        }
+
+        .proj-title {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .proj-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.65;
+            margin-bottom: 10px;
+        }
+
+        .proj-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .proj-tag {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 999px;
+            background: var(--green-light);
+            color: var(--green);
+            border: 0.5px solid var(--green-mid);
+        }
+
+        /* CERTS */
+        .cert-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .cert-badge {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            background: var(--bg-secondary);
+            border: 0.5px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 0.65rem 1rem;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .cert-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            background: var(--blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* CONTACT */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .contact-item {
+            background: var(--bg-secondary);
+            border-radius: var(--radius-md);
+            padding: 0.9rem 1rem;
+        }
+
+        .contact-lbl {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-hint);
+            margin-bottom: 4px;
+        }
+
+        .contact-val {
+            font-size: 13px;
+            color: var(--blue);
+            font-weight: 500;
+            word-break: break-all;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 12px;
+            color: var(--text-hint);
+            border-top: 0.5px solid var(--border);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 640px) {
+            nav {
+                padding: 0.9rem 1.2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .hero {
+                flex-direction: column;
+                gap: 1.2rem;
+                padding: 2rem 1.2rem;
+            }
+
+            .section {
+                padding: 2rem 1.2rem;
+            }
+
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 1.5rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">Faheem Unnisa Syeda</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">ML Projects</a>
+            <a href="#academic-projects">CS Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero" id="about">
+        <div class="hero-photo">FS</div>
+        <div class="hero-text">
+            <h1>Faheem Unnisa Syeda</h1>
+            <div class="hero-subtitle">Data Scientist &middot; Machine Learning Engineer &middot; Queens, New York</div>
+            <p class="hero-bio">M.S. Applied Mathematics graduate with hands-on expertise in machine learning, deep learning, NLP, and statistical modeling. 20+ end-to-end projects spanning computer vision, time-series forecasting, NLP, and generative AI. Prior NYC government experience building automated data systems in regulated environments.</p>
+            <div class="badge-row">
+                <span class="badge hl">Python</span>
+                <span class="badge hl">SQL</span>
+                <span class="badge hl">TensorFlow</span>
+                <span class="badge hl">PyTorch</span>
+                <span class="badge hl">NLP</span>
+                <span class="badge hl">RAG</span>
+                <span class="badge hl">Java</span>
+                <span class="badge hl">Spring Boot</span>
+                <span class="badge">NYC Government Experience</span>
+                <span class="badge">M.S. Applied Mathematics</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-row">
+        <div class="stat-card">
+            <div class="stat-num">24+</div>
+            <div class="stat-lbl">Total Projects</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">99%</div>
+            <div class="stat-lbl">Model Accuracy</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">3</div>
+            <div class="stat-lbl">IBM Certifications</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">NYC</div>
+            <div class="stat-lbl">Gov. Experience</div>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section" id="skills">
+        <div class="section-label">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-cat">Languages</div>
+                <div class="skill-items">Python, SQL, R, C#</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cat">ML Frameworks</div>
+                <div class="skill-items">Scikit-learn, TensorFlow, Keras, PyTorch, XGBoost, LightGBM</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cat">Deep Learning & NLP</div>
+                <div class="skill-items">BERT, T5, Transformers, LSTM/RNN, CNNs, Transfer Learning, RAG</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cat">Time-Series</div>
+                <div class="skill-items">ARIMA, SARIMA, LSTM Forecasting, Attention-enhanced RNNs</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cat">Visualization</div>
+                <div class="skill-items">Tableau, Matplotlib, Seaborn, Streamlit, Gradio</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cat">Data & Tools</div>
+                <div class="skill-items">MS SQL Server, ETL Pipelines, Git/GitHub, Jupyter, Hugging Face</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cat">Software Engineering</div>
+                <div class="skill-items">Java, Android SDK, Spring MVC, Spring Boot, Spring Security, Hibernate/JPA, Thymeleaf, SQLite, Maven, OOP, UML</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section" id="experience">
+        <div class="section-label">Experience</div>
+        <div class="exp-list">
+
+            <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div>
+                    <div class="exp-role">Data Science Immersive Fellow</div>
+                    <div class="exp-org">Flatiron School</div>
+                    <div class="exp-date">Aug 2025 &ndash; Dec 2025 &middot; New York, NY</div>
+                    <ul class="exp-bullets">
+                        <li>Built 20+ end-to-end ML projects across NLP, computer vision, time-series forecasting, and deep learning</li>
+                        <li>Fine-tuned transformer architectures (BERT, T5) and built production-oriented RAG pipelines</li>
+                        <li>Developed and deployed interactive ML apps via Streamlit and Gradio with model documentation</li>
+                        <li>Communicated model outputs and trade-offs to both technical and non-technical stakeholders</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div>
+                    <div class="exp-role">Software Engineer &mdash; Data Systems & Automation</div>
+                    <div class="exp-org">NYC Department of Investigation</div>
+                    <div class="exp-date">Jun 2022 &ndash; Aug 2022 &middot; New York, NY</div>
+                    <ul class="exp-bullets">
+                        <li>Built Python ETL pipelines automating discrepancy detection and data validation in a regulated government environment</li>
+                        <li>Designed and validated a structured MS SQL Server database supporting investigative analytics</li>
+                        <li>Developed a C# web application reducing analyst data inquiry turnaround time</li>
+                        <li>Documented data pipelines, quality issues, and limitations for downstream cross-functional use</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div>
+                    <div class="exp-role">Data Science Consultant</div>
+                    <div class="exp-org">The Build Fellowship by Open Avenues</div>
+                    <div class="exp-date">Jul 2024 &ndash; Oct 2024 &middot; Remote</div>
+                    <ul class="exp-bullets">
+                        <li>Delivered GitHub Gems: an open-source investment signal analysis project using Python data pipelines</li>
+                        <li>Performed regression testing to validate pipeline accuracy under industry-expert supervision</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section" id="projects">
+        <div class="section-label">Featured ML &amp; AI Projects</div>
+        <div class="proj-grid">
+
+            <div class="proj-card">
+                <div class="proj-title">Healthcare RAG System</div>
+                <div class="proj-desc">Retrieval-Augmented Generation pipeline delivering hallucination-resistant patient education responses via embedding-based semantic document retrieval.</div>
+                <div class="proj-tags"><span class="proj-tag">RAG</span><span class="proj-tag">Transformers</span><span class="proj-tag">Semantic Search</span><span class="proj-tag">Python</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">BBC News Classification with BERT</div>
+                <div class="proj-desc">Fine-tuned BERT transformer for 5-category news classification achieving 96.4% test accuracy. Compared TensorFlow and Hugging Face implementations.</div>
+                <div class="proj-tags"><span class="proj-tag">BERT</span><span class="proj-tag">NLP</span><span class="proj-tag">96.4% Accuracy</span><span class="proj-tag">TensorFlow</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">Loan Approval Risk Model</div>
+                <div class="proj-desc">Cost-sensitive classifier achieving 99% accuracy. Threshold tuning reduced expected business cost by ~27% vs. manual baseline with full interpretable documentation.</div>
+                <div class="proj-tags"><span class="proj-tag">Random Forest</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">99% Accuracy</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">Wind Turbine Power Forecasting</div>
+                <div class="proj-desc">Attention-enhanced LSTM models forecasting power output from sequential historical wind data, improving accuracy and interpretability via learned time-step focus.</div>
+                <div class="proj-tags"><span class="proj-tag">LSTM</span><span class="proj-tag">Attention</span><span class="proj-tag">Time-Series</span><span class="proj-tag">PyTorch</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">Heart Disease Predictor</div>
+                <div class="proj-desc">End-to-end classification pipeline using Logistic Regression, SVM, and Random Forest on clinical patient data. Random Forest achieved 99–100% accuracy with 1 misclassification.</div>
+                <div class="proj-tags"><span class="proj-tag">Classification</span><span class="proj-tag">EDA</span><span class="proj-tag">Feature Importance</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">EcoSort AI Assistant</div>
+                <div class="proj-desc">Multimodal waste classification assistant using CNNs, Transformers, and RAG to generate accurate, city-compliant recycling instructions from image and text inputs.</div>
+                <div class="proj-tags"><span class="proj-tag">CNN</span><span class="proj-tag">RAG</span><span class="proj-tag">Multimodal</span><span class="proj-tag">NLP</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">Customer Churn Prediction</div>
+                <div class="proj-desc">Production-ready Scikit-learn pipeline with engineered behavioral features (tenure bins, pricing ratios) improving accuracy from 0.80 to 0.81 with documented trade-offs.</div>
+                <div class="proj-tags"><span class="proj-tag">Feature Engineering</span><span class="proj-tag">Pipeline</span><span class="proj-tag">Churn</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">Image Super-Resolution (U-Net)</div>
+                <div class="proj-desc">Encoder-decoder U-Net with skip connections trained on CelebA dataset. Converts 64&times;64 inputs to 128&times;128 outputs with stable MAE convergence using Adam optimizer.</div>
+                <div class="proj-tags"><span class="proj-tag">U-Net</span><span class="proj-tag">TensorFlow</span><span class="proj-tag">Computer Vision</span></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ACADEMIC / SOFTWARE PROJECTS -->
+    <div class="section" id="academic-projects">
+        <div class="section-label">Academic &amp; Software Engineering Projects</div>
+        <div class="proj-grid">
+
+            <div class="proj-card">
+                <div class="proj-title">Grocery List Management System</div>
+                <div class="proj-desc">Android app for managing multiple grocery lists with item tracking, categories, quantity management, and completion status. Built with a clean OOP architecture (ListOfLists → GroceryList → Item → ItemCategory) and documented with UML class diagrams.</div>
+                <div class="proj-tags"><span class="proj-tag">Java</span><span class="proj-tag">Android</span><span class="proj-tag">SQLite</span><span class="proj-tag">OOP</span><span class="proj-tag">UML</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">Tip Calculator App (Android)</div>
+                <div class="proj-desc">Android application that calculates tip amounts (15%, 20%, 25%) and total cost per person from a bill split. Features input validation with Toast error messages, rounded outputs, and a clean XML-based UI built in Android Studio.</div>
+                <div class="proj-tags"><span class="proj-tag">Java</span><span class="proj-tag">Android SDK</span><span class="proj-tag">XML UI</span><span class="proj-tag">Android Studio</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">Employee Management System (Spring MVC)</div>
+                <div class="proj-desc">Full-stack CRUD web application for managing employee records using Spring Boot and Spring MVC. Features dynamic Thymeleaf templates, Bootstrap-responsive UI, layered MVC architecture (Controller → Service → Repository → Entity), and RESTful endpoints for all operations.</div>
+                <div class="proj-tags"><span class="proj-tag">Java</span><span class="proj-tag">Spring MVC</span><span class="proj-tag">Spring Boot</span><span class="proj-tag">Thymeleaf</span><span class="proj-tag">Bootstrap</span><span class="proj-tag">Maven</span></div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-title">Healthcare Appointment Booking System</div>
+                <div class="proj-desc">Full-stack multi-role web application supporting Patient, Doctor, Admin, and Staff workflows. Patients search doctors by specialization and book appointments; Admins manage slots and doctors; Doctors manage patient reports. Includes role-based access control, PDF invoice generation, and Excel exports.</div>
+                <div class="proj-tags"><span class="proj-tag">Java</span><span class="proj-tag">Spring Boot</span><span class="proj-tag">Spring Security</span><span class="proj-tag">Hibernate / JPA</span><span class="proj-tag">Thymeleaf</span><span class="proj-tag">PDF/Excel Export</span><span class="proj-tag">Maven</span></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <div class="section-label">Education</div>
+        <div class="exp-list">
+            <div class="exp-item">
+                <div class="exp-dot" style="background:#3B6D11;"></div>
+                <div>
+                    <div class="exp-role">M.S., Applied Mathematics</div>
+                    <div class="exp-org" style="color:#3B6D11;">Queens College, City University of New York</div>
+                    <div class="exp-date">Jan 2022 &ndash; Jan 2025 &middot; New York, NY</div>
+                </div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-dot" style="background:#3B6D11;"></div>
+                <div>
+                    <div class="exp-role">B.S., Pure Mathematics & Computer Science</div>
+                    <div class="exp-org" style="color:#3B6D11;">Queens College, City University of New York</div>
+                    <div class="exp-date">Aug 2014 &ndash; May 2020 &middot; New York, NY</div>
+                </div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-dot" style="background:#3B6D11;"></div>
+                <div>
+                    <div class="exp-role">Data Science & ML Immersive Bootcamp</div>
+                    <div class="exp-org" style="color:#3B6D11;">Flatiron School</div>
+                    <div class="exp-date">Aug 2025 &ndash; Dec 2025 &middot; New York, NY</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+        <div class="section-label">Certifications</div>
+        <div class="cert-row">
+            <div class="cert-badge">
+                <div class="cert-icon">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <circle cx="6" cy="6" r="5" stroke="white" stroke-width="1.5" />
+                        <path d="M4 6l1.5 1.5L8 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                IBM Data Science Professional Certificate
+            </div>
+            <div class="cert-badge">
+                <div class="cert-icon">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <circle cx="6" cy="6" r="5" stroke="white" stroke-width="1.5" />
+                        <path d="M4 6l1.5 1.5L8 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                IBM Machine Learning Specialization
+            </div>
+            <div class="cert-badge">
+                <div class="cert-icon">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <circle cx="6" cy="6" r="5" stroke="white" stroke-width="1.5" />
+                        <path d="M4 6l1.5 1.5L8 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                Generative AI Fundamentals Specialization
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section" id="contact">
+        <div class="section-label">Contact</div>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-lbl">Email</div>
+                <div class="contact-val"><a href="/cdn-cgi/l/email-protection#aad9d3cfcecbcccbc2cfcfc79deacdc7cbc3c684c9c5c7"><span class="__cf_email__" data-cfemail="a2d1dbc7c6c3c4c3cac7c7cf95e2c5cfc3cbce8cc1cdcf">[email&#160;protected]</span></a></div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-lbl">Phone</div>
+                <div class="contact-val">*** **** ****</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-lbl">Location</div>
+                <div class="contact-val">Queens, New York</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-lbl">GitHub</div>
+                <div class="contact-val"><a href="https://github.com/SyedaFaheem" target="_blank">github.com/SyedaFaheem</a></div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-lbl">LinkedIn</div>
+                <div class="contact-val"><a href="https://www.linkedin.com/in/faheemunnisa-s-6270888b" target="_blank">linkedin.com/in/faheemunnisa-s</a></div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-lbl">Hugging Face</div>
+                <div class="contact-val"><a href="https://huggingface.co/SyedaFaheem" target="_blank">huggingface.co/SyedaFaheem</a></div>
+            </div
