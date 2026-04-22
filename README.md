@@ -8,7 +8,7 @@
   <a href="mailto:syedafaheem56@gmail.com">Email</a> •
   <a href="https://www.linkedin.com/">LinkedIn</a> •
   <a href="https://syedafaheem.github.io/">Portfolio github</a>•
-  <a href="https://portfoliowebsite-q7br-toiox3skf-faheems-projects-eca044dd.vercel.app/">Portfolio Website</a>
+  <a href="https://portfoliowebsite-cyan-nine.vercel.app/">Portfolio Website</a>
 </p>
 
 ---
@@ -16,7 +16,7 @@
 - 🔍 Passionate about Machine Learning, Data Science,LLM, Statistics, and Data-Driven Strategy  
 - 🧠 Master's in Applied Mathematics 
 - 🧠 Bachelor's in Computer science and Mathematics 
-- 💻 Experienced in Python,Java, Html, SQL, ML Modeling, Web Dev, Spring Boot
+- 💻 Experienced in Python,Java, HTML, SQL, ML Modeling, Web Dev, Spring Boot
 - 📊 Love building data stories that drive real business decisions  
 
 ---
