@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Syeda FaheemUnnisa 👋</h1>
 
 <p align="center">
-  <strong>Data Scientist | Software Engineer | ML Enthusiast</strong>
+  <strong>Data Scientist | Software Engineer | ML Enthusiast | AI Engineer </strong>
 </p>
 
 <p align="center">
