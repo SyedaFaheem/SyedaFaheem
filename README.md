@@ -31,7 +31,7 @@
 | **EcoSort-Waste-Management-Assistant** | AI-powered waste management assistant  | Python, TensorFlow / Keras, PyTorch / Hugging Face (Transformers, NumPy, Pandas |
 | **Churn-Feature-Engineering** | Predicting customer churn in telecom using feature engineering | Python, Pandas, NumPy, Matplotlib & Seaborn, Scikit-Learn (Pipeline, ColumnTransformer, RandomForestClassifier, SelectFromModel)|
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
-| **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
+| **NLP App** | Python NLP App with Sentiment Analysis, NER, and Emotion Detection using AI models and Tkinter GUI | Python, Tkinter(GUI), spaCy (NER), TextBlob (Sentiment), HuggingFace Transformers (Emotion model), JSON (Database), Firebase |
 | **Healthcare App** | Secure full-stack app with real-time sync | Java, Spring Boot, Firebase |
 ---
 ## 🌐 Socials:
