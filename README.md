@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="mailto:syedafaheem56@gmail.com">Email</a> •
-  <a href="https://www.linkedin.com/">LinkedIn</a> •
+  <a href="https://www.linkedin.com/in/faheem-unnisa-s-6270888b/">LinkedIn</a> •
   <a href="https://syedafaheem.github.io/">Portfolio github</a>•
   <a href="https://portfoliowebsite-faheemsyeda.vercel.app/">Portfolio Website</a>
 </p>
